@@ -1,0 +1,117 @@
+/* Reset CSS */
+
+/* Corrigir margens e preenchimentos */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Resetar estilos específicos para listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Definir padrão para elementos 'blockquote' e 'q' */
+blockquote, q {
+    quotes: none;
+}
+
+/* Corrigir espaçamento 'blockquote' e 'q' */
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Resetar 'a' para não ter decoração */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Definir o estilo do cursor padrão para 'button' e 'input' */
+button, input {
+    cursor: pointer;
+}
+
+/* Resetar outros elementos específicos */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+}
+
+/* Incluir uma caixa para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Adicionar uma barra de rolagem sempre para evitar o layout que se move */
+html {
+    overflow-y: scroll;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/weather-effects-composition.jpg');
+    /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    /* Aplica um efeito de blur no fundo */
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Cor de fundo com transparência */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
